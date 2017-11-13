@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3096C79-2D56-400E-8E98-F589DB073965}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComputerizedLibrarySystem</RootNamespace>
+    <AssemblyName>ComputerizedLibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookBorrowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookBorrowForm.designer.cs">
+      <DependentUpon>BookBorrowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookBorrowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookBorrowReport.Designer.cs">
+      <DependentUpon>BookBorrowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookCatalogue.designer.cs">
+      <DependentUpon>BookCatalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyStatisticsForm.designer.cs">
+      <DependentUpon>DailyStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbLibrarySystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbLibrarySystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookReturn.Designer.cs">
+      <DependentUpon>frmBookReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookReg.Designer.cs">
+      <DependentUpon>FrmBookReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditStaffReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditStaffReg.Designer.cs">
+      <DependentUpon>frmEditStaffReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditStudentReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditStudentReg.Designer.cs">
+      <DependentUpon>frmEditStudentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSendSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendSMS.Designer.cs">
+      <DependentUpon>frmSendSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffReg.designer.cs">
+      <DependentUpon>frmStaffReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffReport.Designer.cs">
+      <DependentUpon>FrmStaffReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentReg.designer.cs">
+      <DependentUpon>frmStudentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentReports.Designer.cs">
+      <DependentUpon>FrmStudentReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDILibrarySystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDILibrarySystem.designer.cs">
+      <DependentUpon>MDILibrarySystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrientationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrientationForm.designer.cs">
+      <DependentUpon>OrientationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BookBorrowForm.resx">
+      <DependentUpon>BookBorrowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookBorrowReport.resx">
+      <DependentUpon>BookBorrowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookCatalogue.resx">
+      <DependentUpon>BookCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyStatisticsForm.resx">
+      <DependentUpon>DailyStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookReturn.resx">
+      <DependentUpon>frmBookReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookReg.resx">
+      <DependentUpon>FrmBookReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditStaffReg.resx">
+      <DependentUpon>frmEditStaffReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStudentReg.resx">
+      <DependentUpon>frmEditStudentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendSMS.resx">
+      <DependentUpon>frmSendSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffReg.resx">
+      <DependentUpon>frmStaffReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffReport.resx">
+      <DependentUpon>FrmStaffReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentReg.resx">
+      <DependentUpon>frmStudentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentReports.resx">
+      <DependentUpon>FrmStudentReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDILibrarySystem.resx">
+      <DependentUpon>MDILibrarySystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrientationForm.resx">
+      <DependentUpon>OrientationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DbLibrarySystemDataSet.xsc">
+      <DependentUpon>DbLibrarySystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbLibrarySystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbLibrarySystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbLibrarySystemDataSet.xss">
+      <DependentUpon>DbLibrarySystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbLibrarySystem.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
